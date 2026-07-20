@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <input id="cityInput" type="text" placeholder="Enter city name" />
+      <button id="searchBtn">Get Weather</button>
+      <div id="resultBox" class="weather-box" style="display: none">
+        <h2 id="cityName">City</h2>
+        <div class="weather-line" id="weatherText">Weather:</div>
+        <div class="weather-line" id="tempText">Temperature:</div>
+        <div class="weather-line" id="windText">Wind speed:</div>
+        <div class="weather-line" id="humidityText">
+          Humidity info not available
+        </div>
+        <div class="weather-line" id="dailyText"></div>
+      </div>
+      <div id="errorBox" class="error"></div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

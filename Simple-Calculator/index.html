@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Better Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc-box">
+        <input type="text" id="screen" readonly>
+        
+        <div class="grid-container">
+            <button class="my-btn" onclick="click7()">7</button>
+            <button class="my-btn" onclick="click8()">8</button>
+            <button class="my-btn" onclick="click9()">9</button>
+            <button class="my-btn op-btn" onclick="clickDiv()">/</button>
+
+            <button class="my-btn" onclick="click4()">4</button>
+            <button class="my-btn" onclick="click5()">5</button>
+            <button class="my-btn" onclick="click6()">6</button>
+            <button class="my-btn op-btn" onclick="clickMult()">*</button>
+
+            <button class="my-btn" onclick="click1()">1</button>
+            <button class="my-btn" onclick="click2()">2</button>
+            <button class="my-btn" onclick="click3()">3</button>
+            <button class="my-btn op-btn" onclick="clickSub()">-</button>
+
+            <button class="my-btn" onclick="click0()">0</button>
+            <button class="my-btn clear-btn" onclick="clickClear()">C</button>
+            <button class="my-btn op-btn" onclick="clickEqual()">=</button>
+            <button class="my-btn op-btn" onclick="clickAdd()">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

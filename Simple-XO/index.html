@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>xo game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>XO Game</h1>
+
+    <div class="game">
+      <div class="row">
+        <div class="box" id="box1" onclick="click1()"></div>
+        <div class="box" id="box2" onclick="click2()"></div>
+        <div class="box" id="box3" onclick="click3()"></div>
+      </div>
+      <div class="row">
+        <div class="box" id="box4" onclick="click4()"></div>
+        <div class="box" id="box5" onclick="click5()"></div>
+        <div class="box" id="box6" onclick="click6()"></div>
+      </div>
+      <div class="row">
+        <div class="box" id="box7" onclick="click7()"></div>
+        <div class="box" id="box8" onclick="click8()"></div>
+        <div class="box" id="box9" onclick="click9()"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div id="message">Turn: X</div>
+
+      <button id="btn" onclick="restart()">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

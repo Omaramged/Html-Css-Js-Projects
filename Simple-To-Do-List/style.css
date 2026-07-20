@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: black;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border: 5px solid blue;
+    padding-bottom: 20px;
+}
+
+h1 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.input-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#x {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+button#add-btn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#list {
+    margin: 0 20px;
+}
+
+.item {
+    padding: 15px;
+    border-bottom: 2px solid blue;
+    font-size: 18px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.del-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    float: right;
+    cursor: pointer;
+}

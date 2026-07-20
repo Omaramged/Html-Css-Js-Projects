@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #00796b;
+}
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #b2dfdb;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #004d40;
+}
+.weather-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #b2dfdb;
+  border-radius: 8px;
+}
+.weather-box h2 {
+  margin: 0 0 10px 0;
+}
+.weather-line {
+  margin: 5px 0;
+}
+.error {
+  color: #d32f2f;
+  margin-top: 10px;
+}

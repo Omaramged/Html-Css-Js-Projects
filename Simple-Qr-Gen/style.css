@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.generator {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.input-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.btn-generate {
+    padding: 14px 24px;
+    background: #1877F2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-generate:hover {
+    background: #165FD6;
+}
+
+.btn-generate:active {
+    transform: scale(0.98);
+}
+
+.result-section {
+    text-align: center;
+}
+
+.result-section.hidden {
+    display: none;
+}
+
+.qr-display {
+    margin-bottom: 24px;
+    padding: 24px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qrImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-download,
+.btn-clear {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-download {
+    background: #1877F2;
+    color: white;
+}
+
+.btn-download:hover {
+    background: #165FD6;
+}
+
+.btn-clear {
+    background: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-clear:hover {
+    background: #e0e0e0;
+}
+
+.error-message {
+    padding: 14px 16px;
+    background: #fee;
+    color: #c33;
+    border: 1px solid #fcc;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.error-message.hidden {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .generator {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    .btn-generate {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}
